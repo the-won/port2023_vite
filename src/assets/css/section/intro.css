@@ -139,3 +139,5 @@
 .test {
   display: block;
 }
+/* [PUB-20250918-HIRO] margin 수정 */
+.btn { margin-top: 10px; }
