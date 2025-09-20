@@ -58,7 +58,7 @@
   opacity: 1;
 }
 .intro__text:hover .img {
-  filter: grayscale(0);
+  filter: grayscale(1);
 }
 .intro_lines {
   width: 100%;
@@ -138,8 +138,10 @@
 }
 
 
-.test {
-  display: block;
-}
 /* [PUB-20250918-HIRO] margin 수정 */
 .btn { margin-top: 10px; }
+
+
+.contact {
+  display: inline;
+}
