@@ -1,0 +1,40 @@
+diff --git a/src/assets/css/section/intro.css b/src/assets/css/section/intro.css
+index 57edb78..d4470e1 100644
+--- a/src/assets/css/section/intro.css
++++ b/src/assets/css/section/intro.css
+@@ -55,7 +55,7 @@
+   transition: all 0.3s;
+ }
+ .intro__text:hover .text {
+-  opacity: 0;
++  opacity: 1;
+ }
+ .intro__text:hover .img {
+   filter: grayscale(0);
+@@ -80,6 +80,7 @@
+ }
+ .intro_lines .line:nth-child(2) {
+   height: 2px;
++  display: block;
+ }
+ .intro_lines .line:nth-child(3) {
+   height: 5px;
+@@ -110,6 +111,7 @@
+ }
+ .intro_lines.bottom .line:nth-child(5) {
+   height: 5px;
++  display: block;
+ }
+ .intro_lines.bottom .line:nth-child(6) {
+   height: 2px;
+@@ -134,3 +136,10 @@
+     display: none;
+   }
+ }
++
++
++.test {
++  display: block;
++}
++/* [PUB-20250918-HIRO] margin 수정 */
++.btn { margin-top: 10px; }

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Diff Report</title>
+    <style>
+            body { 
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace; 
+                background: #0d1117; 
+                color: #e6edf3; 
+                margin: 0; 
+                padding: 0;
+                line-height: 1.5;
+            }
+            .container { 
+                max-width: 1200px; 
+                margin: 0 auto; 
+                padding: 20px; 
+            }
+            .header { 
+                background: #21262d; 
+                padding: 20px; 
+                border-radius: 8px; 
+                margin-bottom: 20px;
+                border: 1px solid #30363d;
+            }
+            .file-header { 
+                background: #21262d; 
+                padding: 15px 20px; 
+                border-bottom: 1px solid #30363d;
+                border-top: 1px solid #30363d;
+                margin: 20px 0 0 0;
+            }
+            .file-path { 
+                font-size: 16px; 
+                font-weight: bold; 
+                color: #58a6ff; 
+                margin-bottom: 8px; 
+            }
+            .diff-stats { 
+                display: flex; 
+                gap: 15px; 
+                font-size: 13px; 
+            }
+            .stat-added { color: #3fb950; }
+            .stat-removed { color: #f85149; }
+            .line { 
+                display: flex; 
+                font-size: 13px; 
+                border-bottom: 1px solid #21262d;
+                min-height: 20px;
+            }
+            .line-number { 
+                width: 60px; 
+                text-align: center; 
+                padding: 4px 8px; 
+                background: #161b22; 
+                border-right: 1px solid #30363d; 
+                color: #7d8590; 
+                font-size: 11px; 
+                user-select: none;
+                flex-shrink: 0;
+            }
+            .line-content { 
+                flex: 1; 
+                padding: 4px 12px; 
+                white-space: pre-wrap; 
+                overflow-x: auto;
+                word-break: break-all;
+            }
+            .line-added { 
+                background: #0d4429; 
+                border-left: 3px solid #3fb950; 
+            }
+            .line-added .line-number { 
+                background: #0d4429; 
+                color: #3fb950; 
+            }
+            .line-removed { 
+                background: #5d1a1d; 
+                border-left: 3px solid #f85149; 
+            }
+            .line-removed .line-number { 
+                background: #5d1a1d; 
+                color: #f85149; 
+            }
+            .hunk-header { 
+                background: #1c2128; 
+                color: #7d8590; 
+                padding: 8px 12px; 
+                font-weight: bold; 
+                border-bottom: 1px solid #30363d;
+                border-top: 1px solid #30363d;
+                margin: 10px 0;
+            }
+            .commit-item {
+                background: #161b22;
+                border: 1px solid #30363d;
+                border-radius: 6px;
+                margin: 15px 0;
+                padding: 20px;
+            }
+            .commit-hash {
+                font-family: monospace;
+                color: #58a6ff;
+                font-weight: bold;
+            }
+            .commit-author {
+                color: #7d8590;
+                margin: 5px 0;
+            }
+            .commit-date {
+                color: #7d8590;
+                font-size: 12px;
+            }
+            .commit-message {
+                margin: 10px 0;
+                white-space: pre-wrap;
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        
+            <div class="header">
+                <h1>📊 Git Diff Report</h1>
+                <p>생성 시간: 2025-09-20T07:45:09.866Z</p>
+                <div class="diff-stats">
+                    <span class="stat-added">+ 0 라인 추가</span>
+                    <span class="stat-removed">- 6 라인 삭제</span>
+                    <span style="color: #58a6ff;">📁 1 파일 변경</span>
+                </div>
+            </div>
+            <div class="diff-content">
+                
+                <div class="file-header">
+                    <div class="file-path">📁 src/assets/css/section/port.css</div>
+                    <div class="diff-stats">
+                        <span class="stat-added">+ 0</span>
+                        <span class="stat-removed">- 6</span>
+                    </div>
+                </div>
+                
+            <div class="hunk-header">@@ -1,8 +1,2 @@</div>
+            
+                <div class="line line-context">
+                    <div class="line-number">1</div>
+                    <div class="line-content">#port {</div>
+                </div>
+            
+                <div class="line line-context">
+                    <div class="line-number">2</div>
+                    <div class="line-content">}</div>
+                </div>
+            
+                <div class="line line-removed">
+                    <div class="line-number">-3</div>
+                    <div class="line-content"></div>
+                </div>
+            
+                <div class="line line-removed">
+                    <div class="line-number">-4</div>
+                    <div class="line-content"></div>
+                </div>
+            
+                <div class="line line-removed">
+                    <div class="line-number">-5</div>
+                    <div class="line-content">.box {</div>
+                </div>
+            
+                <div class="line line-removed">
+                    <div class="line-number">-6</div>
+                    <div class="line-content">  width: 100px;</div>
+                </div>
+            
+                <div class="line line-removed">
+                    <div class="line-number">-7</div>
+                    <div class="line-content">  height: 100px;</div>
+                </div>
+            
+                <div class="line line-removed">
+                    <div class="line-number">-8</div>
+                    <div class="line-content">}</div>
+                </div>
+            
+                <div class="line line-context">
+                    <div class="line-number">9</div>
+                    <div class="line-content">\ No newline at end of file</div>
+                </div>
+            
+        
+            
+            </div>
+        
+    </div>
+</body>
+</html>

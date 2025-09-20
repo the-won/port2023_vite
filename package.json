@@ -2,17 +2,24 @@
   "name": "vite",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node bin/git2html.js"
+  },
+  "bin": {
+    "git2html": "./bin/git2html.js"
   },
   "devDependencies": {
     "vite": "^4.4.5"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.22",
+    "chalk": "^4.1.2",
+    "commander": "^14.0.1",
+    "fs-extra": "^11.3.2",
     "gsap": "^3.12.2"
   }
 }

@@ -1,0 +1,76 @@
+commit 58c869f43cbdfb6f385e148d61ea85a47829656d
+Author: won <bonav00@naver.com>
+Date:   Sat Sep 20 01:04:20 2025 +0900
+
+    intro.css 수정 #3
+
+diff --git a/src/assets/css/section/intro.css b/src/assets/css/section/intro.css
+index 4e1d98f..d4470e1 100644
+--- a/src/assets/css/section/intro.css
++++ b/src/assets/css/section/intro.css
+@@ -55,7 +55,7 @@
+   transition: all 0.3s;
+ }
+ .intro__text:hover .text {
+-  opacity: 0;
++  opacity: 1;
+ }
+ .intro__text:hover .img {
+   filter: grayscale(0);
+@@ -80,6 +80,7 @@
+ }
+ .intro_lines .line:nth-child(2) {
+   height: 2px;
++  display: block;
+ }
+ .intro_lines .line:nth-child(3) {
+   height: 5px;
+@@ -110,6 +111,7 @@
+ }
+ .intro_lines.bottom .line:nth-child(5) {
+   height: 5px;
++  display: block;
+ }
+ .intro_lines.bottom .line:nth-child(6) {
+   height: 2px;
+
+commit 76c4d3023fe4b7c2e00235f380a4334ba0eb1e4a
+Author: won <bonav00@naver.com>
+Date:   Sat Sep 20 00:32:46 2025 +0900
+
+    intro.css 수정 #2
+
+diff --git a/src/assets/css/section/intro.css b/src/assets/css/section/intro.css
+index 313e131..4e1d98f 100644
+--- a/src/assets/css/section/intro.css
++++ b/src/assets/css/section/intro.css
+@@ -138,4 +138,6 @@
+ 
+ .test {
+   display: block;
+-}
+\ No newline at end of file
++}
++/* [PUB-20250918-HIRO] margin 수정 */
++.btn { margin-top: 10px; }
+
+commit 689adb3c01125619f1da9bead335e2a3e5a935a9
+Author: won <bonav00@naver.com>
+Date:   Sat Sep 20 00:31:53 2025 +0900
+
+    intro.css 수정 #1
+
+diff --git a/src/assets/css/section/intro.css b/src/assets/css/section/intro.css
+index 57edb78..313e131 100644
+--- a/src/assets/css/section/intro.css
++++ b/src/assets/css/section/intro.css
+@@ -134,3 +134,8 @@
+     display: none;
+   }
+ }
++
++
++.test {
++  display: block;
++}
+\ No newline at end of file
